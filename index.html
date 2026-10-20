@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Application Météo</title>
+    </head>
+
+    <body>
+        <!-- TITRES -->
+
+        <h2>Application Météo</h2>
+
+        <h1>Quel temps fait-il ?</h1>
+
+        <!-- BARRE DE RECHERCHE -->
+
+        <div class="search-bar">
+
+            <div class="input-wrapper">
+                <input id="research" type="text" placeholder="Rechercher une ville...">
+                <button id="reset-btn" type="button">✕</button>
+                <ul id="suggestions"></ul>
+            </div>
+            
+            <button id="search-btn" type="button">Rechercher</button>
+
+        </div>
+
+        <div class="weather-card">
+
+            <!-- HEADER -->
+
+            <div class="weather-header">
+                <h4 class="city" id="city"></h4>
+                <img id="weather-icon" src="images/soleil.png" alt="Soleil">
+            </div>
+
+            <!-- METEO -->
+
+            <h3 class="description" id="description">Recherchez une ville pour afficher la météo</h3>
+            <div class="condition" id="condition"></div>
+        
+            <!-- DETAILS METEO -->
+
+            <div class="weather-details">
+
+                <div class="detail-card">
+                    <p class="detail-value" id="feels-like"></p>
+                    <p class="detail-label">Ressenti</p>
+                </div>
+
+                <div class="detail-card">
+                    <p class="detail-value" id="wind"></p>
+                    <p class="detail-label">Vent</p>
+                </div>
+
+                <div class="detail-card">
+                    <p class="detail-value" id="humidity"></p>
+                    <p class="detail-label">Humidité</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="forecast-card">
+                <h5>Prévisions 7 jours</h5>
+                <div id="forecast-list">
+        
+                </div>
+        </div>
+    </body>
+</html>
